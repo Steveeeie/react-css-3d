@@ -1,4 +1,4 @@
-# react-css-3d
+# react-css-3d (WIP)
 
 A React library for creating 3D objects and scenes without WebGL.
 
