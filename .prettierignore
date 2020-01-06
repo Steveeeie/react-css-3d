@@ -1,4 +1,5 @@
 .cache
-package.json
+dist
 package-lock.json
+package.json
 public

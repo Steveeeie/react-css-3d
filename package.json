@@ -1,44 +1,77 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "react-css-3d",
+  "description": "A React library for creating 3D objects and scenes without WebGL.",
+  "author": "Steve Meredith <hellostevemeredith@gmail.com>",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
+  "license": "MIT",
+  "keywords": [
+    "3d",
+    "css",
+    "css-transforms",
+    "react"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">16.8.0",
+    "styled-components": ">4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@mdx-js/mdx": "^1.5.3",
+    "@mdx-js/react": "^1.5.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "eslint-plugin-jest": "^23.3.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "gatsby": "^2.18.12",
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.31",
+    "gatsby-plugin-mdx": "^1.0.64",
     "gatsby-plugin-offline": "^3.0.27",
+    "gatsby-plugin-page-creator": "^2.1.37",
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-sharp": "^2.3.5",
+    "gatsby-plugin-styled-components": "^3.1.16",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-sharp": "^2.3.7",
-    "prop-types": "^15.7.2",
+    "jest": "^24.9.0",
+    "jest-styled-components": "^6.3.4",
+    "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-spring": "^8.0.27",
+    "release-it": "^12.4.3",
+    "rollup": "^1.28.0",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-filesize": "^6.2.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-progress": "^1.1.1",
+    "styled-components": "^4.4.1"
   },
-  "devDependencies": {
-    "prettier": "^1.19.1"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "lib:build": "rollup --config",
+    "lib:release": "release-it",
+    "docs:start": "gatsby develop",
+    "docs:build": "gatsby build",
+    "docs:serve": "gatsby serve",
+    "docs:clean": "gatsby clearn",
+    "lint": "eslint src",
+    "format": "prettier --write \"**/*.{js,jsx,json,mdx}\"",
+    "test": "jest src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Steveeeie/react-css-3d"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Steveeeie/react-css-3d/issues"
   }
 }
