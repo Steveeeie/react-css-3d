@@ -12,6 +12,7 @@
   ],
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
+  "files": ["dist"],
   "dependencies": {},
   "peerDependencies": {
     "react": ">16.8.0",
@@ -68,6 +69,13 @@
     "lint": "eslint src",
     "format": "prettier --write \"**/*.{js,jsx,json,mdx}\"",
     "test": "jest src"
+  },
+  "hooks": {
+    "before:init": [
+      "npm run lint",
+      "npm run test",
+      "npm run build:lib"
+    ]
   },
   "repository": {
     "type": "git",
