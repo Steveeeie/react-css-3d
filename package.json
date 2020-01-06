@@ -40,6 +40,7 @@
     "gatsby-plugin-styled-components": "^3.1.16",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-sharp": "^2.3.7",
+    "gh-pages": "^2.1.1",
     "jest": "^24.9.0",
     "jest-styled-components": "^6.3.4",
     "prettier": "^1.19.1",
@@ -62,7 +63,8 @@
     "docs:start": "gatsby develop",
     "docs:build": "gatsby build",
     "docs:serve": "gatsby serve",
-    "docs:clean": "gatsby clearn",
+    "docs:clean": "gatsby clean",
+    "docs:deploy": "gh-pages -d public",
     "lint": "eslint src",
     "format": "prettier --write \"**/*.{js,jsx,json,mdx}\"",
     "test": "jest src"

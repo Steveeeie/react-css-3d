@@ -10,7 +10,10 @@ export const SceneContext = createContext();
   webkit browsers but causes depth fighting to happen in non-webkit browsers 🤷.
 */
 
-const isWebkit = /(webkit)/.test(navigator.userAgent.toLowerCase());
+const isWebkit =
+  typeof navigator !== `undefined`
+    ? /(webkit)/.test(navigator.userAgent.toLowerCase())
+    : false;
 
 const OuterContainer = styled.div`
   ${({ backgroundColor, height, width }) => css`

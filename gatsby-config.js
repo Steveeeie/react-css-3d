@@ -4,14 +4,8 @@ module.exports = {
     description: `A React library for creating 3D objects and scenes without WebGL.`,
     author: `@steveeeie`
   },
+  pathPrefix: `/react-css-3d`,
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/docs/images`
-      }
-    },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
