@@ -67,7 +67,7 @@
     "docs:build": "gatsby build",
     "docs:serve": "gatsby serve",
     "docs:clean": "gatsby clean",
-    "docs:deploy": "gh-pages -d public",
+    "docs:deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "lint": "eslint src",
     "format": "prettier --write \"**/*.{js,jsx,json,mdx}\"",
     "test": "jest src"
