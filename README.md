@@ -1,5 +1,7 @@
 # react-css-3d (WIP)
 
+<img alt="License" src="https://img.shields.io/npm/l/react-css-3d" /> <img alt="Version" src="https://img.shields.io/npm/v/react-css-3d"> <img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-brightgreenn"> ![Twitter Follow](https://img.shields.io/twitter/follow/Steveeeie?style=social)
+
 A React library for creating 3D objects and scenes without WebGL.
 
 ### Documentation
